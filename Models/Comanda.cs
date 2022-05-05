@@ -3,11 +3,14 @@
     public class Comanda
     {
         public int Id { get; set; }
-        public int IdProdus { get; set; }
-        public int CodPlata { get; set; }
-        public int CodLivrare { get; set; }
+        public int IdPlata { get; set; }
+        public int IdLivrare { get; set; }
         public string Status { get; set; }
         public DateTime DataPlasare { get; set; }
+
+        public virtual ICollection<Achizitie> Achizitii { get; set; }
+        public virtual Plata Plata { get; set; }
+        public virtual Livrare Livrare { get; set; }
 
     }
 }

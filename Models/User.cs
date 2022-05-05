@@ -6,5 +6,7 @@
         public string Nume { get; set; }
         public string Prenume { get; set; }
         public string email { get; set; }
+
+        public virtual ICollection<Achizitie> Achizitii { get; set; }
     }
 }

@@ -6,5 +6,7 @@
         public string Metoda { get; set; }
         public float Suma { get; set; }
         public DateTime Data { get; set; }
+
+        public virtual Comanda Comanda { get; set; }
     }
 }
